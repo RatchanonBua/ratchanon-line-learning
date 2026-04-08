@@ -34,9 +34,9 @@ const handleWebhook = (request, response) => {
   }
   // Intent Mapping
   let intentMap = new Map();
-  intentMap.set('Default Welcome Intent', welcome);
-  intentMap.set('Default Fallback Intent', fallback);
-  intentMap.set('Body Mass Index - custom - yes', calcBMIfunc);
+  intentMap.set("Default Welcome Intent", welcome);
+  intentMap.set("Default Fallback Intent", fallback);
+  intentMap.set("Body Mass Index - custom - yes", calcBMIfunc);
   agent.handleRequest(intentMap);
 };
 
